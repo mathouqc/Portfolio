@@ -1,4 +1,9 @@
-# AstroPaper 📄
+# Portfolio
+
+Site web personnel créé à partir du template AstroPaper.
+
+La branche `template` contient le template modifié avec les dernières fonctionnalités.
+La branche `main` contient tout le contenu.
 
 ![AstroPaper](public/astropaper-og.jpg)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/community/file/1356898632249991861)
