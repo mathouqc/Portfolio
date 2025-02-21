@@ -9,14 +9,14 @@ export const SITE: Site = {
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
-  postPerPage: 3,
+  postPerPage: 6,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
-  editPost: {
-    url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog",
-    text: "Suggest Changes",
-    appendFilePath: true,
-  },
+  // editPost: {
+  //   url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog",
+  //   text: "Suggest Changes",
+  //   appendFilePath: true,
+  // },
 };
 
 export const LOCALE = {
