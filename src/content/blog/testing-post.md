@@ -7,202 +7,467 @@ draft: false
 tags:
   - Testing
   - Astro
-description: "TESTING POST: A post to test differents features."
+description: "A post to test differents features."
 ---
 
-> This article is from [TailwindLabs](https://tailwindcss-typography.vercel.app/). I put this article to demonstrate how you can write blog posts/articles using AstroPaper theme.
+This document is made to test markdown conversion to HTML.
 
-By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you _really are_ just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
+## Table of contents
 
-We get lots of complaints about it actually, with people regularly asking us things like:
+# h1 Heading
 
-> Why is Tailwind removing the default styles on my `h1` elements? How do I disable this? What do you mean I lose all the other base styles too?
-> We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a `p` element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look _awesome_, not awful.
+## h2 Heading
 
-The `@tailwindcss/typography` plugin is our attempt to give you what you _actually_ want, without any of the downsides of doing something stupid like disabling our base styles.
+### h3 Heading
 
-It adds a new `prose` class that you can slap on any block of vanilla HTML content and turn it into a beautiful, well-formatted document:
+#### h4 Heading
 
-```html
-<article class="prose">
-  <h1>Garlic bread with cheese: What the science tells us</h1>
-  <p>
-    For years parents have espoused the health benefits of eating garlic bread
-    with cheese to their children, with the food earning such an iconic status
-    in our culture that kids will often dress up as warm, cheesy loaf for
-    Halloween.
-  </p>
-  <p>
-    But a recent study shows that the celebrated appetizer may be linked to a
-    series of rabies cases springing up around the country.
-  </p>
-  <!-- ... -->
-</article>
+##### h5 Heading
+
+###### h6 Heading
+
+## Horizontal Rules
+
+---
+
+---
+
+---
+
+## Emphasis
+
+**This is bold text**
+
+_This is italic text_
+
+~~Strikethrough~~
+
+## Blockquotes
+
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
+> > > ...or with spaces between arrows.
+
+## Lists
+
+Unordered
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    - Ac tristique libero volutpat at
+    * Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
+- Very easy!
+
+Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+4. You can use sequential numbers...
+5. ...or keep all the numbers as `1.`
+
+Start numbering with offset:
+
+57. foo
+1. bar
+
+## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+
+Block code "fences"
+
+```
+Sample text here...
 ```
 
-For more information about how to use the plugin and the features it includes, [read the documentation](https://github.com/tailwindcss/typography/blob/master/README.md).
+### Syntax highlighting
 
----
-
-## What to expect from here on out
-
-What follows from here is just a bunch of absolute nonsense I've written to dogfood the plugin itself. It includes every sensible typographic element I could think of, like **bold text**, unordered lists, ordered lists, code blocks, block quotes, _and even italics_.
-
-It's important to cover all of these use cases for a few reasons:
-
-1. We want everything to look good out of the box.
-2. Really just the first reason, that's the whole point of the plugin.
-3. Here's a third pretend reason though a list with three items looks more realistic than a list with two items.
-
-Now we're going to try out another header style.
-
-### Typography should be easy
-
-So that's a header for you — with any luck if we've done our job correctly that will look pretty reasonable.
-
-Something a wise person once told me about typography is:
-
-> Typography is pretty important if you don't want your stuff to look like trash. Make it good then it won't be bad.
-> It's probably important that images look okay here by default as well:
-
-<figure>
-  <img
-    src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
-    alt=""
-  />
-  <figcaption>
-    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-    classical Latin literature from 45 BC, making it over 2000 years old.
-  </figcaption>
-</figure>
-
-Now I'm going to show you an example of an unordered list to make sure that looks good, too:
-
-- So here is the first item in this list.
-- In this example we're keeping the items short.
-- Later, we'll use longer, more complex list items.
-
-And that's the end of this section.
-
-## What if we stack headings?
-
-### We should make sure that looks good, too.
-
-Sometimes you have headings directly underneath each other. In those cases you often have to undo the top margin on the second heading because it usually looks better for the headings to be closer together than a paragraph followed by a heading should be.
-
-### When a heading comes after a paragraph …
-
-When a heading comes after a paragraph, we need a bit more space, like I already mentioned above. Now let's see what a more complex list would look like.
-
-- **I often do this thing where list items have headings.**
-
-  For some reason I think this looks cool which is unfortunate because it's pretty annoying to get the styles right.
-
-  I often have two or three paragraphs in these list items, too, so the hard part is getting the spacing between the paragraphs, list item heading, and separate list items to all make sense. Pretty tough honestly, you could make a strong argument that you just shouldn't write this way.
-
-- **Since this is a list, I need at least two items.**
-
-  I explained what I'm doing already in the previous list item, but a list wouldn't be a list if it only had one item, and we really want this to look realistic. That's why I've added this second list item so I actually have something to look at when writing the styles.
-
-- **It's not a bad idea to add a third item either.**
-
-  I think it probably would've been fine to just use two items but three is definitely not worse, and since I seem to be having no trouble making up arbitrary things to type, I might as well include it.
-
-After this sort of list I usually have a closing statement or paragraph, because it kinda looks weird jumping right to a heading.
-
-## Code should look okay by default.
-
-I think most people are going to use [highlight.js](https://highlightjs.org/) or [Prism](https://prismjs.com/) or something if they want to style their code blocks but it wouldn't hurt to make them look _okay_ out of the box, even with no syntax highlighting.
-
-Here's what a default `tailwind.config.js` file looks like at the time of writing:
+Javascript :
 
 ```js
-module.exports = {
-  purge: [],
-  theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [],
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+
+new Promise((resolve, reject) => {
+  // asynchronous operation
+
+  // then in case of success
+  resolve();
+  // or
+  reject("failure reason");
+});
+
+const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
+
+defer(console.log, "a"), console.log("b"); // logs 'b' then 'a'
+```
+
+```js
+/*
+ * RLE (Run Length Encoding) is a simple form of data compression.
+ * The basic idea is to represent repeated successive characters as a single count and character.
+ * For example, the string "AAAABBBCCDAA" would be encoded as "4A3B2C1D2A".
+ *
+ * @author - [ddaniel27](https://github.com/ddaniel27)
+ */
+
+function Compress(str) {
+  let compressed = "";
+  let count = 1;
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== str[i + 1]) {
+      compressed += count + str[i];
+      count = 1;
+      continue;
+    }
+
+    count++;
+  }
+
+  return compressed;
+}
+
+function Decompress(str) {
+  let decompressed = "";
+  let match = [...str.matchAll(/(\d+)(\D)/g)]; // match all groups of digits followed by a non-digit character
+
+  match.forEach(item => {
+    let [count, char] = [item[1], item[2]];
+    decompressed += char.repeat(count);
+  });
+
+  return decompressed;
+}
+
+export { Compress, Decompress };
+```
+
+```js
+/*
+ * RLE (Run Length Encoding) is a simple form of data compression.
+ * The basic idea is to represent repeated successive characters as a single count and character.
+ * For example, the string "AAAABBBCCDAA" would be encoded as "4A3B2C1D2A".
+ *
+ * @author - [ddaniel27](https://github.com/ddaniel27)
+ */
+
+function Compress(str) {
+  let compressed = "";
+  let count = 1;
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== str[i + 1]) {
+      compressed += count + str[i];
+      count = 1;
+      continue;
+    }
+
+    count++;
+  }
+
+  return compressed;
+}
+
+function Decompress(str) {
+  let decompressed = "";
+  let match = [...str.matchAll(/(\d+)(\D)/g)]; // match all groups of digits followed by a non-digit character
+
+  match.forEach(item => {
+    let [count, char] = [item[1], item[2]];
+    decompressed += char.repeat(count);
+  });
+
+  return decompressed;
+}
+
+export { Compress, Decompress };
+```
+
+```js
+class Car {
+  constructor(make, model, color) {
+    this.make = make;
+    this.model = model;
+    this.color = color;
+  }
+
+  setMake(make) {
+    this.make = make;
+    // NOTE: Returning this for chaining
+    return this;
+  }
+
+  setModel(model) {
+    this.model = model;
+    // NOTE: Returning this for chaining
+    return this;
+  }
+
+  setColor(color) {
+    this.color = color;
+    // NOTE: Returning this for chaining
+    return this;
+  }
+
+  save() {
+    console.log(this.make, this.model, this.color);
+    // NOTE: Returning this for chaining
+    return this;
+  }
+}
+
+const car = new Car("Ford", "F-150", "red").setColor("pink").save();
+```
+
+```ts
+import { PriorityQueue } from "../data_structures/heap/heap";
+/**
+ * @function dijkstra
+ * @description Compute the shortest path from a source node to all other nodes. The input graph is in adjacency list form. It is a multidimensional array of edges. graph[i] holds the edges for the i'th node. Each edge is a 2-tuple where the 0'th item is the destination node, and the 1'th item is the edge weight.
+ * @Complexity_Analysis
+ * Time complexity: O((V+E)*log(V)). For fully connected graphs, it is O(E*log(V)).
+ * Space Complexity: O(V)
+ * @param {[number, number][][]} graph - The graph in adjacency list form
+ * @param {number} start - The source node
+ * @return {number[]} - The shortest path to each node
+ * @see https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+ */
+export const dijkstra = (
+  graph: [number, number][][],
+  start: number
+): number[] => {
+  // We use a priority queue to make sure we always visit the closest node. The
+  // queue makes comparisons based on path weights.
+  const priorityQueue = new PriorityQueue(
+    (a: [number, number]) => {
+      return a[0];
+    },
+    graph.length,
+    (a: [number, number], b: [number, number]) => {
+      return a[1] < b[1];
+    }
+  );
+  priorityQueue.insert([start, 0]);
+  // We save the shortest distance to each node in `distances`. If a node is
+  // unreachable from the start node, its distance is Infinity.
+  const distances = Array(graph.length).fill(Infinity);
+  distances[start] = 0;
+
+  while (priorityQueue.size() > 0) {
+    const node = priorityQueue.extract()[0];
+    graph[node].forEach(([child, weight]) => {
+      const new_distance = distances[node] + weight;
+      if (new_distance < distances[child]) {
+        // Found a new shortest path to child node. Record its distance and add child to the queue.
+        // If the child already exists in the queue, the priority will be updated. This will make sure the queue will be at most size V (number of vertices).
+        priorityQueue.increasePriority(child, [child, weight]);
+        distances[child] = new_distance;
+      }
+    });
+  }
+
+  return distances;
 };
 ```
 
-Hopefully that looks good enough to you.
+C# code
 
-### What about nested lists?
+```cs
+#region Studio Style
+class Program : IThemeable
+{
+    static int _I = 1;
+    delegate void DoSomething();
 
-Nested lists basically always look bad which is why editors like Medium don't even let you do it, but I guess since some of you goofballs are going to do it we have to carry the burden of at least making it work.
+    /// <summary>
+    /// The quick brown fox jumps over the lazy dog
+    /// THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+    /// </summary>
+    static void Main(string[] args)
+    {
+        string normalStr = "The time now is approximately " + DateTime.Now;
+        Uri Illegal1Uri = new Uri("http://packmyboxwith/jugs.html?q=five-dozen&t=liquor");
+        Regex OperatorRegex = new Regex(@"S#$", RegexOptions.IgnorePatternWhitespace);
 
-1. **Nested lists are rarely a good idea.**
-   - You might feel like you are being really "organized" or something but you are just creating a gross shape on the screen that is hard to read.
-   - Nested navigation in UIs is a bad idea too, keep things as flat as possible.
-   - Nesting tons of folders in your source code is also not helpful.
-2. **Since we need to have more items, here's another one.**
-   - I'm not sure if we'll bother styling more than two levels deep.
-   - Two is already too much, three is guaranteed to be a bad idea.
-   - If you nest four levels deep you belong in prison.
-3. **Two items isn't really a list, three is good though.**
-   - Again please don't nest lists if you want people to actually read your content.
-   - Nobody wants to look at this.
-   - I'm upset that we even have to bother styling this.
+        for (int O = 0; O < 123456789; O++)
+        {
+            _I += (O % 3) * ((O / 1) ^ 2) - 5;
+            if (!OperatorRegex.IsMatch(Illegal1Uri.ToString()))
+            {
+                // no idea what this does!?
+                Console.WriteLine(Illegal1Uri + normalStr);
 
-The most annoying thing about lists in Markdown is that `<li>` elements aren't given a child `<p>` tag unless there are multiple paragraphs in the list item. That means I have to worry about styling that annoying situation too.
+            }
+        }
+    }
+}
+#endregion
+```
 
-- **For example, here's another nested list.**
+C++ code
 
-  But this time with a second paragraph.
+```cpp
+#pragma once
+#include "Header.h" // Contains ISomeClass and includes <vector>, <list>
+#define PREPROCESSOR_DEFINITION
 
-  - These list items won't have `<p>` tags
-  - Because they are only one line each
+namespace MyNamespace
+{
+void GlobalFunction() {}
+bool GlobalVariable = true;
+/// <summary>
+/// The quick brown fox jumps over the lazy dog
+/// THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+/// </summary>
+class SomeClass    : public ISomeClass
+{
+public:
+    enum SomeEnum
+    {
+        ENUM_0 = 0,
+        ENUM_1 = 1
+    };
+    struct SomeData
+    {
+        int m_Integer;
+        float m_Float;
+    };
 
-- **But in this second top-level list item, they will.**
+    SomeClass() { m_Data = new SomeData(); }
+    ~SomeClass() { delete m_Data; m_Data = 0; }
 
-  This is especially annoying because of the spacing on this paragraph.
+    static int DoSomethingStatic( int _Arg0, float _Arg1 )
+    {
+        std::vector<float> Vec = std::vector<float>();
 
-  - As you can see here, because I've added a second line, this list item now has a `<p>` tag.
+        float f = 0.0f;
+        for (int i = 0; i < _Arg0; ++i)
+        {
+            if (i % 3 != 0)
+            {
+                f += _Arg1;
+                Vec.push_back(f);
+            }
+        }
+        return Vec.size();
+    }
 
-    This is the second line I'm talking about by the way.
+    template<class _T>
+    int DoSomethingNonStatic() const;
+private:
+    SomeData* m_Data;
+    static SomeData* m_StaticData;
+};
 
-  - Finally here's another list item so it's more like a list.
+}    // MyNamespace
+```
 
-- A closing list item, but with no nested list, because why not?
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- this is an example XML file -->
+<people xmlns:x="http://studiostyles.info">
+  <person name="Jim Jones" ID="27">
+    <email html="yes">jim@example.invalid</email>
+    <address>
+      <post>123 Example St, &#160;South Brisbane</post>
+      <city>Brisbane</city>
+    </address>
+    <x:comments>
+    <![CDATA[ See? Data. Don't worry about this <tag>. ]]>
+    </x:comments>
+  </person>
+</people>
+```
 
-And finally a sentence to close off this section.
+## Tables
 
-## There are other elements we need to style
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
 
-I almost forgot to mention links, like [this link to the Tailwind CSS website](https://tailwindcss.com). We almost made them blue but that's so yesterday, so we went with dark gray, feels edgier.
+## Links
 
-We even included table styles, check it out:
+[link text](http://dev.nodeca.com)
 
-| Wrestler                | Origin       | Finisher           |
-| ----------------------- | ------------ | ------------------ |
-| Bret "The Hitman" Hart  | Calgary, AB  | Sharpshooter       |
-| Stone Cold Steve Austin | Austin, TX   | Stone Cold Stunner |
-| Randy Savage            | Sarasota, FL | Elbow Drop         |
-| Vader                   | Boulder, CO  | Vader Bomb         |
-| Razor Ramon             | Chuluota, FL | Razor's Edge       |
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
-We also need to make sure inline code looks good, like if I wanted to talk about `<span>` elements or tell you the good news about `@tailwindcss/typography`.
+Autoconverted link https://github.com/nodeca/pica
 
-### Sometimes I even use `code` in headings
+## Images
 
-Even though it's probably a bad idea, and historically I've had a hard time making it look good. This _"wrap the code blocks in backticks"_ trick works pretty well though really.
+![Minion](https://octodex.github.com/images/minion.png)
 
-Another thing I've done in the past is put a `code` tag inside of a link, like if I wanted to tell you about the [`tailwindcss/docs`](https://github.com/tailwindcss/docs) repository. I don't love that there is an underline below the backticks but it is absolutely not worth the madness it would require to avoid it.
+With title
 
-#### We haven't used an `h4` yet
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
-But now we have. Please don't use `h5` or `h6` in your content, Medium only supports two heading levels for a reason, you animals. I honestly considered using a `before` pseudo-element to scream at you if you use an `h5` or `h6`.
+Sized image
 
-We don't style them at all out of the box because `h4` elements are already so small that they are the same size as the body copy. What are we supposed to do with an `h5`, make it _smaller_ than the body copy? No thanks.
+<img src="https://octodex.github.com/images/dojocat.jpg" alt="Dojocat" width=200>
 
-### We still need to think about stacked headings though.
+## Equations
 
-#### Let's make sure we don't screw that up with `h4` elements, either.
+### Inline Equations
 
-Phew, with any luck we have styled the headings above this text and they look pretty good.
+Inline equations are written between single dollar signs `$...$`. Here are some examples:
 
-Let's add a closing paragraph here so things end with a decently sized block of text. I can't explain why I want things to end that way but I have to assume it's because I think things will look weird or unbalanced if there is a heading too close to the end of the document.
+1. The famous mass-energy equivalence formula: `$E = mc^2$`
+2. The quadratic formula: `$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$`
+3. Euler's identity: `$e^{i\pi} + 1 = 0$`
 
-What I've written here is probably long enough, but adding this final sentence can't hurt.
+### Block Equations
+
+For more complex equations or when you want the equation to be displayed on its own line, use double dollar signs `$$...$$`:
+
+The Gaussian integral:
+
+```bash
+$$ \int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi} $$
+```
+
+The definition of the Riemann zeta function:
+
+```bash
+$$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} $$
+```
+
+Maxwell's equations in differential form:
+
+```bash
+$$
+\begin{aligned}
+\nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0} \\
+\nabla \cdot \mathbf{B} &= 0 \\
+\nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \\
+\nabla \times \mathbf{B} &= \mu_0\left(\mathbf{J} + \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}\right)
+\end{aligned}
+$$
+```
+
+### Using Mathematical Symbols
+
+LaTeX provides a wide range of mathematical symbols:
+
+- Greek letters: `$\alpha$`, `$\beta$`, `$\gamma$`, `$\delta$`, `$\epsilon$`, `$\pi$`
+- Operators: `$\sum$`, `$\prod$`, `$\int$`, `$\partial$`, `$\nabla$`
+- Relations: `$\leq$`, `$\geq$`, `$\approx$`, `$\sim$`, `$\propto$`
+- Logical symbols: `$\forall$`, `$\exists$`, `$\neg$`, `$\wedge$`, `$\vee$`
