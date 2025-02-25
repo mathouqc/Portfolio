@@ -76,6 +76,14 @@ Start numbering with offset:
 57. foo
 1. bar
 
+## Footnote
+
+A footnote is a reference, explanation, or comment placed at the bottom of a page in a document. It is typically marked by a superscript number or symbol in the main text, which corresponds to a matching note at the bottom of the page[^firstfoot]. Footnotes are commonly used in academic and research writing to provide citations, clarify information, or offer additional details without disrupting the flow of the main text[^textfoot]. They help readers access supplementary information while keeping the document clear and concise.
+
+[^firstfoot]: First footnote explanation
+
+[^textfoot]: Footnote using text
+
 ## Code
 
 Inline `code`
@@ -422,7 +430,14 @@ With title
 
 Sized image
 
-<img src="https://octodex.github.com/images/dojocat.jpg" alt="Dojocat" width=200>
+<img src="https://octodex.github.com/images/dojocat.jpg" alt="Dojocat" width=50%>
+
+Figure with caption
+
+<figure>
+  <img src="https://octodex.github.com/images/steroidtocat.png" alt="SteriodtoCat" width=50%>
+  <figcaption> SetiodtoCat </figcaption>
+</figure>
 
 ## Equations
 

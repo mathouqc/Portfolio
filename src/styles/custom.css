@@ -1,0 +1,26 @@
+/* Remove underline from heading links and footnote links */
+.prose .heading-link,
+.prose a[data-footnote-ref],
+.prose a[data-footnote-backref] {
+  @apply no-underline;
+}
+
+/* Higher footnote links */
+.prose sup {
+  top: -0.7em !important;
+}
+
+/* Accent colored footnote links */
+.prose a[data-footnote-ref] {
+  @apply !text-skin-accent;
+}
+
+/* Top border to footnote section */
+.prose section[data-footnotes] {
+  @apply border-t !border-skin-line;
+}
+
+/* Centered figure caption */
+.prose figcaption {
+  @apply text-center;
+}
